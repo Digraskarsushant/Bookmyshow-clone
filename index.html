@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Movie Tickets, Plays, Sports, Events &amp; Cinemas near Pune - BookMyShow Pune.</title>
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="sidebar">
+            <nav class="sidenavbar">
+                <h1>HELLO</h1>
+            </nav>
+            <nav class="sidesubnavbar">
+                <img src="img/rewards.webp">
+                <p>Unlock special offers & great benifits</p>
+                <button class="login" onclick="document.getElementById('id01').style.display='block'">Login / Register</button>
+            </nav>
+            <a href="#">
+                <div class="lefticon">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                </div>
+                <div class="text">Notifications</div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+            <a class="btn-disabled" href="#">
+                <div class="lefticon">
+                    <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+                <div class="text">Purchase History<br>
+                    <div class="subtext">View all your bookings & Purchases</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+            </a>
+            <a class="btn-disabled" href="#">
+                <div class="lefticon">
+                    <ion-icon name="tv-outline"></ion-icon>
+                </div>
+                <div class="text">Stream Library<br>
+                    <div class="subtext">Rented & Purchased Movies</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+            </a>
+            <a href="https://support.bookmyshow.com/support/home">
+                <div class="lefticon">
+                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                </div>
+                <div class="text">Help & Support<br>
+                    <div class="subtext">View commonly asked queries and Chat</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+            <a class="btn-disabled" href="#">
+                <div class="lefticon">
+                    <ion-icon name="settings-outline"></ion-icon>
+                </div>
+                <div class="text">Accounts & Settings<br>
+                    <div class="subtext">Location, Payments, Addresses & More</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+            </a>
+            <a href="https://in.bookmyshow.com/my-profile/rewards">
+                <div class="lefticon">
+                    <ion-icon name="gift-outline"></ion-icon>
+                </div>
+                <div class="text">Rewards<br>
+                    <div class="subtext">View your rewards & unlock new ones</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+            <a href="https://in.bookmyshow.com/donation/">
+                <div class="lefticon">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </div>
+                <div class="text">BookASmile</div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+        </nav>
+        <div class="overlay"></div>
+        <div class="content">
+            <nav class="navbar">
+                <div class="left-container">
+                    <img src="img/logo.png" class="brand-logo" alt="" />
+                    <div class='input'>
+                        <ion-icon name="search"></ion-icon>
+                        <input className='search'
+                        placeholder='Search for Movies, Events, Plays, Sports, and Activities'></input>
+                     </div>
+                </div>
+                <div class="right-container">
+                  <div class="baju">
+                    <a href="#" class="location">Pune<ion-icon name="caret-down-sharp"></ion-icon></a>
+                    <button class="signin"
+                        onclick="document.getElementById('id01').style.display='block'">Sign-in</button>
+                  </div>
+                    <div id="id01" class="modal">
+                        <div class="modal-content">
+                            <div class="getstart">
+                                <h3>Get Started</h3>
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                    title="Close Modal">
+                                    <ion-icon name="close-outline"></ion-icon>
+                                </span>
+                            </div>
+                            <div class="container">
+                                <a href="#" class="button">
+                                    <div class="logo">
+                                        <img src="img/googlelogo.svg">
+                                    </div>
+                                    <div class="text">Continue with Google</div>
+                                </a>
+                                <a href="#" class="button">
+                                    <div class="logo">
+                                        <ion-icon name="mail-outline" style="font-size: 22px;"></ion-icon>
+                                    </div>
+                                    <div class="text">Continue with Email</div>
+                                </a>
+                                <a href="#" class="button">
+                                    <div class="logo">
+                                        <ion-icon name="logo-apple" style="font-size: 22px;"></ion-icon>
+                                    </div>
+                                    <div class="text">Continue with Apple</div>
+                                </a>
+                            </div>
+                            <h2>OR</h2>
+                            <div class="phone">
+                                <img alt="indian flag" src="img/indianflag.svg">
+                                <div class="code">+91</div>
+                                <input id="mobileNo" type="tel" pattern="[0-9]*"
+                                    placeholder="Continue with mobile number" class="mobileNo">
+                            </div>
+                            <p>I agree to the <u>Terms & Conditions</u>&<u>Privacy Policy</u></p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-customized open-menu">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </a>
+                </div>
+            </nav>
+            <nav class="subnavbar">
+                <ul class='navitem'>
+                    <li><a href='https://in.bookmyshow.com/explore/movies-pune'>Movies</a></li>
+                    <li><a href='https://in.bookmyshow.com/explore/c/stream'>Stream</a></li>
+                    <li><a href='https://in.bookmyshow.com/explore/events-pune'>Events</a></li>
+                    <li><a href='https://in.bookmyshow.com/explore/plays-pune'>Play</a></li>
+                    <li><a href='https://in.bookmyshow.com/explore/activities-pune'>Activities</a></li>
+                    <li><a href='https://in.bookmyshow.com/explore/sports-pune'>Sports</a></li>
+                </ul>
+                <ul class='navitem1'>
+                    <li><a href='https://in.bookmyshow.com/list-your-show/'>List Your Show<span>NEW</span></a></li>
+                    <li><a href='https://in.bookmyshow.com/voucher'>Corporates</a></li>
+                    <li><a href='https://in.bookmyshow.com/offers'>Offers</a></li>
+                    <li><a href='https://in.bookmyshow.com/giftcards'>Gift Cards</a></li>
+                </ul>
+            </nav>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="slider">
+                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1704973929236_vangoghdesk.jpg" alt="" id="imagee">
+                </div>
+                </div>
+            </div>
+            <script>
+                let movies = [
+                    {
+                        image: 'https://assets-in.bmscdn.com/promotions/cms/creatives/1704973929236_vangoghdesk.jpg'
+                    },
+                    {
+                        image: 'https://assets-in.bmscdn.com/promotions/cms/creatives/1704716691919_web.jpg'
+                    },
+                    {
+                        image: 'https://assets-in.bmscdn.com/promotions/cms/creatives/1704958137348_desklolla.jpg'
+                    },
+                    {
+                        image: 'https://assets-in.bmscdn.com/promotions/cms/creatives/1705316847779_puneweb.jpg'
+                    },
+                    {
+                        image: 'https://assets-in.bmscdn.com/promotions/cms/creatives/1703746841318_satindersartajweb.jpg'
+                    }
+                ]
+            </script>
+            <script>
+                const carousel = document.querySelector('.carousel');
+                let sliders = [];
+                let slideIndex = 0;
+                const createSlide = () => {
+                    if (slideIndex >= movies.length) {
+                        slideIndex = 0;
+                    }
+                    let slide = document.createElement('div');
+                    let imgElement = document.createElement('img');
+                    imgElement.appendChild(document.createTextNode(''));
+                    slide.appendChild(imgElement);
+                    carousel.appendChild(slide);
+                    imgElement.src = movies[slideIndex].image;
+                    slideIndex++;
+                    slide.className = 'slider';
+                    sliders.push(slide);
+                    if (sliders.length) {
+                        sliders[0].style.marginLeft = `calc(-${100 * (sliders.length - 2)}% - ${10 * (sliders.length - 2)}px)`;
+                    }
+                }
+                for (let i = 0; i < 3; i++) {
+                    createSlide();
+                }
+                setInterval(() => {
+                    createSlide();
+                }, 3000);
+                jQuery(document).ready(function () {
+
+                    $('.login, .overlay').on('click', function () {
+                        $('.sidebar').removeClass('active');
+                        $('.overlay').removeClass('active');
+                    });
+
+                    $('.open-menu').on('click', function (e) {
+                        e.preventDefault();
+                        $('.sidebar').addClass('active');
+                        $('.overlay').addClass('active');
+                        $('.collapse.show').toggleClass('show');
+                        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                    });
+                });
+                var modal = document.getElementById('id01');
+                if (target == modal) {
+                    modal.style.display = "none";
+                }
+            </script>
+            <h1 class="title">Recommended Movies</h1>
+            <div class="movies-list">
+                <div class="card-container">
+                    <div class="movie">
+                        <div class="card">
+                            <a href="https://in.bookmyshow.com/pune/movies/merry-christmas/ET00348399">
+                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny43LzEwICAyMy45SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00348399-dlwrzqasxw-portrait.jpg" alt="Merry Christmas" width="100%" height="100%">
+                                </a>
+                            </div>
+                        <h3>Merry Christmas</h3>
+                        <p class="detail">Drama/Thriller</p>
+                    </div>
+                    <div class="movie">
+                        <div class="card">
+                            <a href="https://in.bookmyshow.com/pune/movies/hanuman/ET00311673">
+                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS41LzEwICAyMjUuM0sgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00311673-hgpjragdze-portrait.jpg" alt="Hanu-Man" width="100%" height="100%">
+                            </a>
+                        </div>
+                        <h3>Hanu-Man</h3>
+                        <p class="detail">Action/Adventure/Fantasy</p>
+                    </div>
+                    <div class="movie">
+                        <div class="card">
+                            <a href="https://in.bookmyshow.com/pune/movies/dunki/ET00326964">
+                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny40LzEwICAyNzguNksgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00326964-hcpsylxfym-portrait.jpg" alt="Dunki" width="100%" height="100%">
+                            </a>
+                        </div>
+                        <h3>Dunki</h3>
+                        <p class="detail">Comedy/Drama</p>
+                    </div>
+                    <div class="movie">
+                        <div class="card">
+                            <a href="https://in.bookmyshow.com/pune/movies/captain-miller/ET00333139">
+                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny44LzEwICAzNi44SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00333139-epubenyrac-portrait.jpg" alt="Captain Miller" width="100%" height="100%">
+                            </a>
+                        </div>
+                        <h3>Captain Miller</h3>
+                        <p class="detail">Action/Period/Thriller</p>
+                    </div>
+                    <div class="movie">
+                        <div class="card">
+                            <a href="https://in.bookmyshow.com/pune/movies/salaar-cease-fire-part-1/ET00301886">
+                                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC4zLzEwICA2MTYuOUsgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00301886-nsckbqkrmt-portrait.jpg" alt="Salaar: Cease Fire - Part 1" width="100%" height="100%">
+                            </a>
+                        </div>
+                        <h3>Salaar: Cease Fire - Part 1</h3>
+                        <p class="detail">Action/Thriller</p>
+                    </div>
+                    <div class="movie">
+                        <div class="card">
+                            <a href="https://in.bookmyshow.com/pune/movies/12th-fail/ET00363787">
+                                <img alt="12th Fail" width="100%" height="100%" class="sc-eykeme-1 jrtRfk" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS42LzEwICAxMjMuNEsgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00363787-vvnpakrgls-portrait.jpg">
+                            </a>
+                        </div>
+                        <h3>12th Fail</h3>
+                        <p class="detail">Drama</p>
+                    </div>
+                    <div class="movie">
+                        <div class="card">
+                            <a href="https://in.bookmyshow.com/pune/movies/sam-bahadur/ET00310187">
+                                <img alt="Sam Bahadur" width="100%" height="100%" class="sc-eykeme-1 jrtRfk" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC45LzEwICAxMjYuMksgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00310187-ssxmfgclxx-portrait.jpg">
+                            </a>
+                        </div>
+                        <h3>Sam Bahadur</h3>
+                        <p class="detail">Biography/Drama</p>
+                    </div>
+                    <div class="movie">
+                        <div class="card">
+                            <a href="https://in.bookmyshow.com/pune/movies/ole-aale/ET00374968">
+                                <img alt="Ole Aale" width="100%" height="100%" class="sc-eykeme-1 jrtRfk" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS40LzEwICA1LjlLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00374968-lybbtnzhce-portrait.jpg">
+                            </a>
+                        </div>
+                        <h3>Ole Aale</h3>
+                        <p class="detail">Adventure/Drama/Family</p>
+                    </div>
+                    <div class="movie">
+                        <div class="card">
+                            <a href="https://in.bookmyshow.com/pune/movies/panchak/ET00378325">
+                                <img alt="Khurchi" width="100%" height="100%" class="sc-eykeme-1 jrtRfk" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny4zLzEwICA3NjIgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00133290-fzvuywdrls-portrait.jpg">
+                            </a>
+                        </div>
+                        <h3>Khurchi</h3>
+                        <p class="detail">Action/Crime/Drama</p>
+                    </div>
+                    <div class="movie">
+                        <div class="card">
+                            <a href="https://in.bookmyshow.com/pune/movies/khurchi/ET00133290">
+                                <img alt="Panchak" width="100%" height="100%" class="sc-eykeme-1 jrtRfk" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC4yLzEwICAzLjZLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00378325-aapvxrhqld-portrait.jpg">
+                            </a>
+                        </div>
+                        <h3>Panchak</h3>
+                        <p class="detail">Comedy/Drama</p>
+                    </div>
+                </div>
+            </div>
+                <a href="https://in.bookmyshow.com/explore/c/stream">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/stream-leadin-web-collection-202210241242.png" alt=""class="strip">
+                </a>
+            <h1 class="title-enter">The Best of Entertainment</h1>
+            <div class="enter-list">
+                <div class="enter-container">
+                    <div class="card">
+                        <a href="https://in.bookmyshow.com/explore/workshops-pune?referrerBase=">
+                            <img alt="Workshops" width="100%" height="100%" class="sc-eykeme-1 jrtRfk" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MzArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/workshop-and-more-web-collection-202211140440.png">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://in.bookmyshow.com/explore/comedy-shows-pune?referrerBase=">
+                            <img alt="Comedy Shows" width="100%" height="100%" class="sc-eykeme-1 jrtRfk" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NjArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/comedy-shows-collection-202211140440.png">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://in.bookmyshow.com/explore/music-shows-pune?referrerBase=">
+                            <img alt="Music Shows" width="100%" height="100%" class="sc-eykeme-1 jrtRfk" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MzArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/music-shows-collection-202211140440.png">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://in.bookmyshow.com/explore/upskill-pune?referrerBase=">
+                            <img alt="Upskill &amp; training" width="100%" height="100%" class="sc-eykeme-1 jrtRfk" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NiBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/upskill-collection-202211140440.png">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://in.bookmyshow.com/explore/arts-and-crafts-workshops-pune?referrerBase=">
+                            <img alt="Arts and Crafts" width="100%" height="100%" class="sc-eykeme-1 jrtRfk" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NiBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/arts-crafts-collection-202211140440.png">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://in.bookmyshow.com/explore/theatre-plays-pune?referrerBase=">
+                            <img alt="Theatre Shows" width="100%" height="100%" class="sc-eykeme-1 jrtRfk" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/theatre-shows-collection-202211140440.png">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://in.bookmyshow.com/explore/adventure-pune?referrerBase=">
+                            <img alt="Adventure" width="100%" height="100%" class="sc-eykeme-1 jrtRfk" style="border-radius: 0px; opacity: 1; transition: all 0.5s ease 0s; width: 100%; min-height: inherit; max-height: inherit;" src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/adventure-fun-collection-202211140440.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="contentfooter">
+        <div id="fp1" class="footerflex1">
+            <div class="mainfp" style="cursor:pointer">
+            <img src="img/fav.png" alt="brand_icon" id="footericon">
+            BookMyShow
+        </div>
+        <div class="sectionfp" style="width:20vw;text-align:justify-content;line-height:3.5vh">
+            Got a show, event, activity or a great experience? Partner with us &amp; get listed on BookMyShow</div>
+            <div class="iconss">
+                <img src="img\facebook-app-symbol.png" class="icons" title="facebook">
+                <img src="img\twitter (1).png" class="icons" title="twitter">
+                <img src="img\instagram (1).png" class="icons" title="instagram">
+                <img src="img\linkedin (1).png" class="icons" title="linkedin">
+            </div>
+            <div style="color:white">Developed By Sushant Digraskar.</div>
+        </div>        
+        <div id="fp2" class="footerflex">
+            <div class="mainfp">About</div>
+            <div class="sectionfp sectionfp1">Patch</div>
+            <div class="sectionfp sectionfp1" >Update</div>
+            <div class="sectionfp sectionfp1" >Beta Test</div>
+            <div class="sectionfp sectionfp1" >Pricing Products</div>
+        </div>
+        <div id="fp3" class="footerflex">
+            <div class="mainfp">Help and Solutions</div>
+            <div class="sectionfp sectionfp1" >Talk to support</div>
+            <div class="sectionfp sectionfp1">Support docs</div>
+            <div class="sectionfp sectionfp1">System status</div>
+        </div>
+        <div id="fp4" class="footerflex">
+            <div class="mainfp">Support</div>
+            <div class="sectionfp sectionfp1">Help center</div>
+            <div class="sectionfp sectionfp1">Acount Information</div>
+            <div class="sectionfp sectionfp1">About</div>
+            <div class="sectionfp sectionfp1">contact us</div>
+            
+        </div>
+    </div>
+    </footer>
+    <script>
+        if(window.screen.width<=1080){
+            let abcd=document.body.getElementsByClassName("navitem1");
+            abcd[0].style.visibility="hidden";
+            let abcde=document.body.getElementsByClassName("navitem");
+            abcde[0].style.margin="auto";
+            let abcde1=document.body.getElementsByClassName("brand-logo")
+            abcde1[0].style.order="-1";
+            abcde1[0].style.marginLeft="0vw";
+            let abcde12=document.body.getElementsByClassName("location")
+            abcde1[0].style.order="-1";
+            let abcjd=document.body.getElementsByClassName("navbar");
+            abcjd[0].style.height="fit-content";
+            abcjd[0].style.flexDirection="column";
+            let abcde124=document.body.getElementsByClassName("left-container")
+            abcde124[0].style.gap="30vw";
+            abcde124[0].style.width="99%";
+            abcde124[0].style.marginLeft="0vw";
+            let abcde125=document.body.getElementsByClassName("right-container")
+            abcde125[0].style.flexDirection="row";
+            let abcde126=document.body.getElementsByClassName("modal-content")
+        }
+    </script>  
+</body>
